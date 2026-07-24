@@ -4,155 +4,120 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ALEXXIS JANE MANTILLA | SALES ARCHITECT</title>
+  
+  <!-- Montserrat Font from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
-    /* New Palette Variables */
+    /* Palette Inspired by image_75ca80.png & your previous palette */
     :root {
-      --caramel: #BF7E46;
-      --papaya-whip: #FBEDD6;
-      --baby-blue: #97C6E0;
-      
-      --text-dark: #2B2118;
-      --text-muted: #6E5D4F;
+      --card-bg: #FBEDD6;      /* Soft beige background */
+      --text-dark: #2B2118;    /* Deep charcoal/brown for ultra-clean readability */
+      --accent-line: #BF7E46;  /* Warm Caramel accent line */
+      --accent-hover: #97C6E0; /* Subtle Baby Blue highlight for interactive links */
     }
 
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-family: 'Montserrat', 'Century Gothic', sans-serif;
     }
 
     body {
-      background-color: var(--papaya-whip);
-      color: var(--text-dark);
+      background-color: #EFEFEF;
       min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 24px;
+      padding: 20px;
     }
 
+    /* Vertical card layout mirroring the physical card in image_75ca80.png */
     .card-container {
-      background-color: #ffffff;
-      border: 2px solid var(--caramel);
-      border-radius: 16px;
+      background-color: var(--card-bg);
+      border-radius: 20px;
       width: 100%;
-      max-width: 410px;
-      padding: 40px 28px;
+      max-width: 360px;
+      padding: 48px 32px 40px;
       text-align: center;
-      box-shadow: 0 12px 30px rgba(191, 126, 70, 0.15);
-      position: relative;
-    }
-
-    /* Architectural accent top bar */
-    .card-container::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 6px;
-      background-color: var(--baby-blue);
-      border-radius: 14px 14px 0 0;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     h1 {
-      font-size: 1.35rem;
-      font-weight: 800;
-      color: var(--caramel);
-      letter-spacing: 0.08em;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      letter-spacing: 0.18em;
       text-transform: uppercase;
       margin-bottom: 6px;
-      line-height: 1.3;
+      line-height: 1.35;
     }
 
     .title {
-      font-size: 0.85rem;
+      font-size: 0.75rem;
       color: var(--text-dark);
-      font-weight: 700;
-      letter-spacing: 0.15em;
+      font-weight: 500;
+      letter-spacing: 0.22em;
       text-transform: uppercase;
-      margin-bottom: 12px;
+      margin-bottom: 20px;
+    }
+
+    .accent-bar {
+      height: 2px;
+      width: 50px;
+      background-color: var(--accent-line);
+      margin-bottom: 28px;
+    }
+
+    .info-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 28px;
+      width: 100%;
+    }
+
+    .info-link {
+      font-size: 0.825rem;
+      font-weight: 400;
+      color: var(--text-dark);
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      transition: color 0.2s ease;
+    }
+
+    .info-link:hover {
+      color: var(--accent-line);
     }
 
     .location {
       font-size: 0.8rem;
-      color: var(--text-muted);
-      letter-spacing: 0.05em;
+      font-weight: 500;
+      color: var(--text-dark);
+      letter-spacing: 0.08em;
       text-transform: uppercase;
-      margin-bottom: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 4px;
-    }
-
-    .divider {
-      height: 2px;
-      width: 40px;
-      background-color: var(--baby-blue);
-      margin: 0 auto 24px;
+      line-height: 1.5;
+      margin-bottom: 32px;
     }
 
     .qr-section {
       background-color: #ffffff;
-      padding: 12px;
-      display: inline-block;
-      margin-bottom: 8px;
-      border: 2px dashed var(--baby-blue);
+      padding: 10px;
       border-radius: 12px;
+      display: inline-block;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
     }
 
     .qr-section img {
       display: block;
-      width: 160px;
-      height: 160px;
-    }
-
-    .qr-label {
-      font-size: 0.75rem;
-      color: var(--text-muted);
-      letter-spacing: 0.05em;
-      margin-bottom: 28px;
-      text-transform: uppercase;
-    }
-
-    .links {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 12px 18px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 0.85rem;
-      letter-spacing: 0.03em;
-      transition: all 0.2s ease;
-      background-color: var(--papaya-whip);
-      color: var(--text-dark);
-      border: 1px solid rgba(191, 126, 70, 0.3);
-    }
-
-    .btn:hover {
-      background-color: var(--baby-blue);
-      color: #ffffff;
-      border-color: var(--baby-blue);
-    }
-
-    .btn-primary {
-      background-color: var(--caramel);
-      color: #ffffff;
-      border: none;
-    }
-
-    .btn-primary:hover {
-      background-color: #a46735;
+      width: 150px;
+      height: 150px;
     }
   </style>
 </head>
@@ -160,25 +125,29 @@
 
   <div class="card-container">
     
-    <!-- All-Caps Header -->
+    <!-- Name & Title -->
     <h1>ALEXXIS JANE MANTILLA</h1>
     <p class="title">SALES ARCHITECT</p>
-    <p class="location">📍 Makati, Philippines</p>
     
-    <div class="divider"></div>
+    <!-- Minimal Divider Line -->
+    <div class="accent-bar"></div>
+
+    <!-- Contact Details Stack -->
+    <div class="info-group">
+      <a href="tel:09647568540" class="info-link">0964 756 8540</a>
+      <a href="mailto:lexi.mantillaa@gmail.com" class="info-link">lexi.mantillaa@gmail.com</a>
+      <a href="https://instagram.com/alxsjne" target="_blank" rel="noopener" class="info-link">@alxsjne</a>
+      <a href="https://leximantilla.github.io/digitalcard/" class="info-link">www.leximantilla.github.io</a>
+    </div>
+
+    <!-- Location -->
+    <div class="location">
+      MAKATI | PHILIPPINES
+    </div>
 
     <!-- vCard QR Code -->
     <div class="qr-section">
-      <img src="https://quickchart.io/qr?text=MECARD%3AN%3AAlexxis+Jane+Mantilla%3BORG%3ADiversifiedsource+Inc.%3BTEL%3A%2B63+964+756+8540%3BEMAIL%3Alexi.mantillaa%40gmail.com%3BADR%3AMakati%2C+Philippines%3BURL%3Ahttps%3A%2F%2Fleximantilla.github.io%2Fdigitalcard%2F%3B%3B&size=160" alt="Scan to Save Contact">
-    </div>
-    <p class="qr-label">Scan to save contact info</p>
-
-    <!-- Contact Links -->
-    <div class="links">
-      <a href="tel:09647568540" class="btn btn-primary">📞 0964 756 8540</a>
-      <a href="mailto:lexi.mantillaa@gmail.com" class="btn">✉️ lexi.mantillaa@gmail.com</a>
-      <a href="https://instagram.com/alxsjne" target="_blank" rel="noopener" class="btn">📸 @alxsjne</a>
-      <a href="https://leximantilla.github.io/digitalcard/" class="btn">🌐 visit digital card</a>
+      <img src="https://quickchart.io/qr?text=MECARD%3AN%3AAlexxis+Jane+Mantilla%3BORG%3ADiversifiedsource+Inc.%3BTEL%3A%2B63+964+756+8540%3BEMAIL%3Alexi.mantillaa%40gmail.com%3BADR%3AMakati%2C+Philippines%3BURL%3Ahttps%3A%2F%2Fleximantilla.github.io%2Fdigitalcard%2F%3B%3B&size=150" alt="Scan to Save Contact">
     </div>
 
   </div>
