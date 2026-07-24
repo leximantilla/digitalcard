@@ -11,11 +11,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
-    /* Strict 3-Color Palette from image_75d5e2.png */
+    /* Strict 3-Color Palette */
     :root {
-      --lime-green: #D2DB76;
-      --pink: #FFC3CC;
-      --dark-green: #28301C;
+      --olivine: #9BAD50;
+      --columbia: #B6CFE4;
+      --van-dyke: #393027;
     }
 
     * {
@@ -26,7 +26,7 @@
     }
 
     body {
-      background-color: var(--pink);
+      background-color: var(--columbia);
       min-height: 100vh;
       display: flex;
       justify-content: center;
@@ -36,33 +36,33 @@
 
     /* Main Card Container */
     .card-container {
-      background-color: var(--lime-green);
+      background-color: var(--olivine);
       border-radius: 20px;
       width: 100%;
       max-width: 360px;
       padding: 48px 32px 40px;
       text-align: center;
-      box-shadow: 0 15px 35px rgba(40, 48, 28, 0.15);
+      box-shadow: 0 15px 35px rgba(57, 48, 39, 0.15);
       display: flex;
       flex-direction: column;
       align-items: center;
     }
 
-    /* Name - Significantly Larger & Bold */
+    /* Name - Prominent & Bold */
     h1 {
       font-size: 1.75rem;
       font-weight: 800;
-      color: var(--dark-green);
+      color: var(--van-dyke);
       letter-spacing: 0.14em;
       text-transform: uppercase;
       margin-bottom: 8px;
       line-height: 1.2;
     }
 
-    /* Position - Smaller Supplementary Text */
+    /* Position - Supplementary Text */
     .title {
       font-size: 0.75rem;
-      color: var(--dark-green);
+      color: var(--van-dyke);
       font-weight: 600;
       letter-spacing: 0.22em;
       text-transform: uppercase;
@@ -74,7 +74,7 @@
     .accent-bar {
       height: 3px;
       width: 50px;
-      background-color: var(--pink);
+      background-color: var(--columbia);
       border-radius: 2px;
       margin-bottom: 28px;
     }
@@ -91,7 +91,7 @@
     .info-link {
       font-size: 0.85rem;
       font-weight: 500;
-      color: var(--dark-green);
+      color: var(--van-dyke);
       text-decoration: none;
       letter-spacing: 0.05em;
       transition: opacity 0.2s ease;
@@ -105,7 +105,7 @@
     .location {
       font-size: 0.8rem;
       font-weight: 600;
-      color: var(--dark-green);
+      color: var(--van-dyke);
       letter-spacing: 0.12em;
       text-transform: uppercase;
       margin-bottom: 32px;
@@ -113,7 +113,7 @@
 
     /* vCard QR Code Container */
     .qr-section {
-      background-color: var(--pink);
+      background-color: var(--columbia);
       padding: 12px;
       border-radius: 16px;
       display: inline-block;
@@ -123,7 +123,7 @@
       display: block;
       width: 150px;
       height: 150px;
-      mix-blend-mode: multiply; /* Blends QR code cleanly into pink tile */
+      mix-blend-mode: multiply; /* Blends QR code cleanly into the Columbia blue tile */
     }
   </style>
 </head>
@@ -131,7 +131,7 @@
 
   <div class="card-container">
     
-    <!-- Prominent Name -->
+    <!-- Name -->
     <h1>LEXI MANTILLA</h1>
     <p class="title">SALES ARCHITECT</p>
     
