@@ -11,14 +11,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
-    /* Palette Tokens based on Image Palette */
+    /* Color Tokens based on Burnt Toffee & Pale Jade */
     :root {
-      --savory-sage: #818263;      /* Card Background Accent */
-      --avocado-smoothie: #C2C395; /* Subtle Accents */
-      --blush-beet: #DDBAAE;       /* Soft Divider Line */
-      --peach-protein: #EFD7CF;    /* Main Body Outer Background */
-      --oat-latte: #DCD4C1;        /* Central Card Container */
-      --deep-sage-text: #2C3023;   /* High-Contrast Dark Text (Eye-friendly) */
+      --pale-jade: #DFF5ED;        /* Viewport / Outer Background */
+      --burnt-toffee: #845D3E;      /* Secondary Text & Accent Line */
+      --espresso: #2B1E16;          /* Deep Dark Text for High Contrast & Comfort */
+      --soft-cream: #F9F8F3;        /* Main Card Container */
+      --border-subtle: #E2DDD5;     /* Delicate Card Border */
     }
 
     * {
@@ -29,7 +28,7 @@
     }
 
     body {
-      background-color: var(--peach-protein);
+      background-color: var(--pale-jade);
       min-height: 100vh;
       display: flex;
       justify-content: center;
@@ -39,45 +38,45 @@
 
     /* Main Card Container */
     .card-container {
-      background-color: var(--oat-latte);
+      background-color: var(--soft-cream);
       border-radius: 28px;
       width: 100%;
       max-width: 360px;
       padding: 48px 32px 40px;
       text-align: center;
-      box-shadow: 0 20px 40px rgba(44, 48, 35, 0.1);
+      box-shadow: 0 16px 36px rgba(43, 30, 22, 0.08);
       display: flex;
       flex-direction: column;
       align-items: center;
-      border: 1px solid rgba(129, 130, 99, 0.2);
+      border: 1px solid var(--border-subtle);
     }
 
-    /* Name - Clear & Eye-Friendly */
+    /* Name - High Contrast Dark Espresso */
     h1 {
       font-size: 1.75rem;
       font-weight: 800;
-      color: var(--deep-sage-text);
+      color: var(--espresso);
       letter-spacing: 0.12em;
       text-transform: uppercase;
       margin-bottom: 8px;
       line-height: 1.2;
     }
 
-    /* Job Title */
+    /* Position - Warm Burnt Toffee */
     .title {
       font-size: 0.78rem;
-      color: var(--savory-sage);
+      color: var(--burnt-toffee);
       font-weight: 700;
-      letter-spacing: 0.2em;
+      letter-spacing: 0.22em;
       text-transform: uppercase;
       margin-bottom: 20px;
     }
 
-    /* Divider Line */
+    /* Accent Line */
     .accent-bar {
       height: 3px;
       width: 48px;
-      background-color: var(--blush-beet);
+      background-color: var(--burnt-toffee);
       border-radius: 2px;
       margin-bottom: 28px;
     }
@@ -94,34 +93,34 @@
     .info-link {
       font-size: 0.88rem;
       font-weight: 600;
-      color: var(--deep-sage-text);
+      color: var(--espresso);
       text-decoration: none;
       letter-spacing: 0.04em;
-      transition: opacity 0.2s ease;
+      transition: color 0.2s ease;
     }
 
     .info-link:hover {
-      color: var(--savory-sage);
+      color: var(--burnt-toffee);
     }
 
     /* Location */
     .location {
       font-size: 0.8rem;
       font-weight: 700;
-      color: var(--savory-sage);
+      color: var(--burnt-toffee);
       letter-spacing: 0.12em;
       text-transform: uppercase;
       margin-bottom: 32px;
     }
 
-    /* vCard QR Code Tile */
+    /* vCard QR Code Container */
     .qr-section {
       background-color: #FFFFFF;
       padding: 14px;
       border-radius: 20px;
       display: inline-block;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-      border: 1px solid var(--avocado-smoothie);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+      border: 1px solid var(--border-subtle);
     }
 
     .qr-section img {
@@ -142,7 +141,7 @@
     <!-- Accent Line -->
     <div class="accent-bar"></div>
 
-    <!-- Contact Info -->
+    <!-- Contact Details -->
     <div class="info-group">
       <a href="tel:09647568540" class="info-link">0964 756 8540</a>
       <a href="mailto:lexi.mantillaa@gmail.com" class="info-link">lexi.mantillaa@gmail.com</a>
@@ -154,9 +153,9 @@
       MAKATI | PHILIPPINES
     </div>
 
-    <!-- vCard QR Code (Includes TITLE:Sales Architect) -->
+    <!-- Corrected vCard QR Code -->
     <div class="qr-section">
-      <img src="https://quickchart.io/qr?text=BEGIN%3AVCARD%0AVERSION%3A3.0%0AN%3AMantilla%3BLexi%0AFN%3ALexi+Mantilla%0AORG%3ADiversifiedsource+Inc.%0ATITLE%3ASales+Architect%0ATEL%3A%2B639647568540%0AEMAIL%3Alexi.mantillaa%40gmail.com%3BADR%3A%3B%3BMakati%3B%3B%3BPhilippines%0AEND%3AVCARD&size=150" alt="Scan to Save Contact">
+      <img src="https://quickchart.io/qr?text=BEGIN%3AVCARD%0D%0AVERSION%3A3.0%0D%0AN%3AMantilla%3BLexi%0D%0AFN%3ALexi+Mantilla%0D%0AORG%3ADiversifiedsource+Inc.%0D%0ATITLE%3ASales+Architect%0D%0ATEL%3A%2B639647568540%0D%0AEMAIL%3Alexi.mantillaa%40gmail.com%0D%0AADR%3A%3B%3BMakati%3B%3B%3BPhilippines%0D%0AEND%3AVCARD&size=150" alt="Scan to Save Contact">
     </div>
 
   </div>
