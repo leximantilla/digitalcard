@@ -3,28 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alexxis Jane Mantilla | Sales Architect</title>
+  <title>ALEXXIS JANE MANTILLA | SALES ARCHITECT</title>
   <style>
+    /* New Palette Variables */
     :root {
-      --copper: #775537;
-      --yellow: #FBE29D;
-      --nebula: #C0DDDA;
-      --seashell: #F1F1F1;
+      --caramel: #BF7E46;
+      --papaya-whip: #FBEDD6;
+      --baby-blue: #97C6E0;
       
-      --text-main: #333333;
-      --text-muted: #555555;
+      --text-dark: #2B2118;
+      --text-muted: #6E5D4F;
     }
 
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
     }
 
     body {
-      background-color: var(--seashell);
-      color: var(--text-main);
+      background-color: var(--papaya-whip);
+      color: var(--text-dark);
       min-height: 100vh;
       display: flex;
       justify-content: center;
@@ -34,48 +34,73 @@
 
     .card-container {
       background-color: #ffffff;
-      border: 1px solid #e0e0e0;
-      border-radius: 12px;
+      border: 2px solid var(--caramel);
+      border-radius: 16px;
       width: 100%;
-      max-width: 400px;
-      padding: 40px 30px;
+      max-width: 410px;
+      padding: 40px 28px;
       text-align: center;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+      box-shadow: 0 12px 30px rgba(191, 126, 70, 0.15);
+      position: relative;
+    }
+
+    /* Architectural accent top bar */
+    .card-container::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background-color: var(--baby-blue);
+      border-radius: 14px 14px 0 0;
     }
 
     h1 {
-      font-size: 1.6rem;
-      font-weight: 700;
-      color: var(--copper);
-      margin-bottom: 8px;
-    }
-
-    .nickname {
-      font-weight: 400;
-      font-size: 1.1rem;
-      color: var(--text-muted);
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--caramel);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+      line-height: 1.3;
     }
 
     .title {
-      font-size: 1rem;
-      color: var(--text-main);
-      font-weight: 600;
-      margin-bottom: 24px;
+      font-size: 0.85rem;
+      color: var(--text-dark);
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
     }
 
-    .line-spacer {
-      border-top: 2px solid var(--yellow);
-      width: 60px;
+    .location {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+    }
+
+    .divider {
+      height: 2px;
+      width: 40px;
+      background-color: var(--baby-blue);
       margin: 0 auto 24px;
     }
 
     .qr-section {
       background-color: #ffffff;
-      padding: 10px;
+      padding: 12px;
       display: inline-block;
-      margin-bottom: 12px;
-      border: 1px solid #eeeeee;
-      border-radius: 8px;
+      margin-bottom: 8px;
+      border: 2px dashed var(--baby-blue);
+      border-radius: 12px;
     }
 
     .qr-section img {
@@ -85,44 +110,49 @@
     }
 
     .qr-label {
-      font-size: 0.8rem;
+      font-size: 0.75rem;
       color: var(--text-muted);
-      margin-bottom: 30px;
+      letter-spacing: 0.05em;
+      margin-bottom: 28px;
+      text-transform: uppercase;
     }
 
     .links {
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 10px;
     }
 
     .btn {
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 12px 20px;
+      padding: 12px 18px;
       border-radius: 8px;
       text-decoration: none;
-      font-weight: 500;
-      font-size: 0.9rem;
-      transition: background-color 0.2s ease;
-      background-color: var(--seashell);
-      color: var(--copper);
-      border: 1px solid #dcdcdc;
+      font-weight: 600;
+      font-size: 0.85rem;
+      letter-spacing: 0.03em;
+      transition: all 0.2s ease;
+      background-color: var(--papaya-whip);
+      color: var(--text-dark);
+      border: 1px solid rgba(191, 126, 70, 0.3);
     }
 
     .btn:hover {
-      background-color: var(--yellow);
+      background-color: var(--baby-blue);
+      color: #ffffff;
+      border-color: var(--baby-blue);
     }
 
-    .btn-contact {
-      background-color: var(--copper);
+    .btn-primary {
+      background-color: var(--caramel);
       color: #ffffff;
       border: none;
     }
 
-    .btn-contact:hover {
-      background-color: #8a6546;
+    .btn-primary:hover {
+      background-color: #a46735;
     }
   </style>
 </head>
@@ -130,21 +160,24 @@
 
   <div class="card-container">
     
-    <h1>Alexxis Jane Mantilla</h1>
-    <p class="nickname">"Lexi"</p>
-    <div class="line-spacer"></div>
-    <p class="title">Sales Architect</p>
+    <!-- All-Caps Header -->
+    <h1>ALEXXIS JANE MANTILLA</h1>
+    <p class="title">SALES ARCHITECT</p>
+    <p class="location">📍 Makati, Philippines</p>
+    
+    <div class="divider"></div>
 
-    <!-- vCard QR Code (Directly formatted to prompt phone contact saving) -->
+    <!-- vCard QR Code -->
     <div class="qr-section">
-      <img src="https://quickchart.io/qr?text=MECARD%3AN%3AAlexxis+Jane+Mantilla%3BORG%3ADiversifiedsource+Inc.%3BTEL%3A%2B63+964+756+8540%3BURL%3Ahttps%3A%2F%2Fleximantilla.github.io%2Fdigitalcard%2F%3B%3B&size=160" alt="Scan to Save Contact">
+      <img src="https://quickchart.io/qr?text=MECARD%3AN%3AAlexxis+Jane+Mantilla%3BORG%3ADiversifiedsource+Inc.%3BTEL%3A%2B63+964+756+8540%3BEMAIL%3Alexi.mantillaa%40gmail.com%3BADR%3AMakati%2C+Philippines%3BURL%3Ahttps%3A%2F%2Fleximantilla.github.io%2Fdigitalcard%2F%3B%3B&size=160" alt="Scan to Save Contact">
     </div>
     <p class="qr-label">Scan to save contact info</p>
 
-    <!-- Action Buttons -->
+    <!-- Contact Links -->
     <div class="links">
-      <a href="tel:09647568540" class="btn btn-contact">📞 +63 964 756 8540</a>
-      <a href="mailto:diversifiedsource.design@gmail.com" class="btn">✉️ email me</a>
+      <a href="tel:09647568540" class="btn btn-primary">📞 0964 756 8540</a>
+      <a href="mailto:lexi.mantillaa@gmail.com" class="btn">✉️ lexi.mantillaa@gmail.com</a>
+      <a href="https://instagram.com/alxsjne" target="_blank" rel="noopener" class="btn">📸 @alxsjne</a>
       <a href="https://leximantilla.github.io/digitalcard/" class="btn">🌐 visit digital card</a>
     </div>
 
