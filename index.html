@@ -5,15 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alexxis Jane Mantilla | Sales Architect</title>
   <style>
-    /* Color Palette from image_5.png */
     :root {
-      --copper: #775537; /* Old Copper - #775537 */
-      --yellow: #FBE29D; /* Butter Yellow - #FBE29D */
-      --nebula: #C0DDDA; /* Nebula - #C0DDDA */
-      --seashell: #F1F1F1; /* Seashell - #F1F1F1 */
+      --copper: #775537;
+      --yellow: #FBE29D;
+      --nebula: #C0DDDA;
+      --seashell: #F1F1F1;
       
-      --text-main: #333; /* Darker grey for main text */
-      --text-muted: #555; /* Muted grey for secondary text */
+      --text-main: #333333;
+      --text-muted: #555555;
     }
 
     * {
@@ -34,7 +33,7 @@
     }
 
     .card-container {
-      background-color: #fff; /* White card for contrast */
+      background-color: #ffffff;
       border: 1px solid #e0e0e0;
       border-radius: 12px;
       width: 100%;
@@ -70,19 +69,12 @@
       margin: 0 auto 24px;
     }
 
-    .contact-info {
-      font-size: 0.9rem;
-      color: var(--text-muted);
-      line-height: 1.6;
-      margin-bottom: 30px;
-    }
-
     .qr-section {
-      background-color: #fff;
+      background-color: #ffffff;
       padding: 10px;
       display: inline-block;
-      margin-bottom: 30px;
-      border: 1px solid #eee;
+      margin-bottom: 12px;
+      border: 1px solid #eeeeee;
       border-radius: 8px;
     }
 
@@ -123,41 +115,37 @@
       background-color: var(--yellow);
     }
 
-    /* Target the primary contact button */
     .btn-contact {
       background-color: var(--copper);
-      color: #fff;
+      color: #ffffff;
       border: none;
     }
 
     .btn-contact:hover {
-      background-color: #8a6546; /* Lighter copper on hover */
+      background-color: #8a6546;
     }
-
   </style>
 </head>
 <body>
 
   <div class="card-container">
     
-    <!-- Header -->
     <h1>Alexxis Jane Mantilla</h1>
     <p class="nickname">"Lexi"</p>
     <div class="line-spacer"></div>
     <p class="title">Sales Architect</p>
 
-    <!-- vCard QR Code -->
+    <!-- vCard QR Code (Directly formatted to prompt phone contact saving) -->
     <div class="qr-section">
-      <!-- The encoded vCard data in MECARD format -->
-      <img src="https://quickchart.io/qr?text=MECARD%3AN%3AAlexxis+Jane+Mantilla%3BORG%3ADiversifiedsource+Inc.%3BTEL%3A%2B63+964+756+8540%3BURL%3Ahttps%3A%2F%2Fleximantilla.github.io%2Fdigital-card%2F%3B%3B&size=160" alt="Scan to Save Contact">
+      <img src="https://quickchart.io/qr?text=MECARD%3AN%3AAlexxis+Jane+Mantilla%3BORG%3ADiversifiedsource+Inc.%3BTEL%3A%2B63+964+756+8540%3BURL%3Ahttps%3A%2F%2Fleximantilla.github.io%2Fdigitalcard%2F%3B%3B&size=160" alt="Scan to Save Contact">
     </div>
     <p class="qr-label">Scan to save contact info</p>
 
-    <!-- Contact Actions -->
+    <!-- Action Buttons -->
     <div class="links">
       <a href="tel:09647568540" class="btn btn-contact">📞 +63 964 756 8540</a>
       <a href="mailto:diversifiedsource.design@gmail.com" class="btn">✉️ email me</a>
-      <a href="https://leximantilla.github.io/digital-card/" class="btn">🌐 visit digital card</a>
+      <a href="https://leximantilla.github.io/digitalcard/" class="btn">🌐 visit digital card</a>
     </div>
 
   </div>
