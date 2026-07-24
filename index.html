@@ -3,20 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ALEXXIS JANE MANTILLA | SALES ARCHITECT</title>
+  <title>LEXI MANTILLA | SALES ARCHITECT</title>
   
-  <!-- Montserrat Font from Google Fonts -->
+  <!-- Montserrat Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
-    /* Palette Inspired by image_75ca80.png & your previous palette */
+    /* Strict 3-Color Palette from image_75d5e2.png */
     :root {
-      --card-bg: #FBEDD6;      /* Soft beige background */
-      --text-dark: #2B2118;    /* Deep charcoal/brown for ultra-clean readability */
-      --accent-line: #BF7E46;  /* Warm Caramel accent line */
-      --accent-hover: #97C6E0; /* Subtle Baby Blue highlight for interactive links */
+      --lime-green: #D2DB76;
+      --pink: #FFC3CC;
+      --dark-green: #28301C;
     }
 
     * {
@@ -27,7 +26,7 @@
     }
 
     body {
-      background-color: #EFEFEF;
+      background-color: var(--pink);
       min-height: 100vh;
       display: flex;
       justify-content: center;
@@ -35,89 +34,96 @@
       padding: 20px;
     }
 
-    /* Vertical card layout mirroring the physical card in image_75ca80.png */
+    /* Main Card Container */
     .card-container {
-      background-color: var(--card-bg);
+      background-color: var(--lime-green);
       border-radius: 20px;
       width: 100%;
       max-width: 360px;
       padding: 48px 32px 40px;
       text-align: center;
-      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 15px 35px rgba(40, 48, 28, 0.15);
       display: flex;
       flex-direction: column;
       align-items: center;
     }
 
+    /* Name - Significantly Larger & Bold */
     h1 {
-      font-size: 1.15rem;
-      font-weight: 700;
-      color: var(--text-dark);
-      letter-spacing: 0.18em;
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--dark-green);
+      letter-spacing: 0.14em;
       text-transform: uppercase;
-      margin-bottom: 6px;
-      line-height: 1.35;
+      margin-bottom: 8px;
+      line-height: 1.2;
     }
 
+    /* Position - Smaller Supplementary Text */
     .title {
       font-size: 0.75rem;
-      color: var(--text-dark);
-      font-weight: 500;
+      color: var(--dark-green);
+      font-weight: 600;
       letter-spacing: 0.22em;
       text-transform: uppercase;
       margin-bottom: 20px;
+      opacity: 0.9;
     }
 
+    /* Divider Accent */
     .accent-bar {
-      height: 2px;
+      height: 3px;
       width: 50px;
-      background-color: var(--accent-line);
+      background-color: var(--pink);
+      border-radius: 2px;
       margin-bottom: 28px;
     }
 
+    /* Contact Links Stack */
     .info-group {
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 12px;
       margin-bottom: 28px;
       width: 100%;
     }
 
     .info-link {
-      font-size: 0.825rem;
-      font-weight: 400;
-      color: var(--text-dark);
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--dark-green);
       text-decoration: none;
       letter-spacing: 0.05em;
-      transition: color 0.2s ease;
+      transition: opacity 0.2s ease;
     }
 
     .info-link:hover {
-      color: var(--accent-line);
+      opacity: 0.7;
     }
 
+    /* Location */
     .location {
       font-size: 0.8rem;
-      font-weight: 500;
-      color: var(--text-dark);
-      letter-spacing: 0.08em;
+      font-weight: 600;
+      color: var(--dark-green);
+      letter-spacing: 0.12em;
       text-transform: uppercase;
-      line-height: 1.5;
       margin-bottom: 32px;
     }
 
+    /* vCard QR Code Container */
     .qr-section {
-      background-color: #ffffff;
-      padding: 10px;
-      border-radius: 12px;
+      background-color: var(--pink);
+      padding: 12px;
+      border-radius: 16px;
       display: inline-block;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
     }
 
     .qr-section img {
       display: block;
       width: 150px;
       height: 150px;
+      mix-blend-mode: multiply; /* Blends QR code cleanly into pink tile */
     }
   </style>
 </head>
@@ -125,19 +131,18 @@
 
   <div class="card-container">
     
-    <!-- Name & Title -->
-    <h1>ALEXXIS JANE MANTILLA</h1>
+    <!-- Prominent Name -->
+    <h1>LEXI MANTILLA</h1>
     <p class="title">SALES ARCHITECT</p>
     
-    <!-- Minimal Divider Line -->
+    <!-- Accent Line -->
     <div class="accent-bar"></div>
 
-    <!-- Contact Details Stack -->
+    <!-- Contact Details -->
     <div class="info-group">
       <a href="tel:09647568540" class="info-link">0964 756 8540</a>
       <a href="mailto:lexi.mantillaa@gmail.com" class="info-link">lexi.mantillaa@gmail.com</a>
       <a href="https://instagram.com/alxsjne" target="_blank" rel="noopener" class="info-link">@alxsjne</a>
-      <a href="https://leximantilla.github.io/digitalcard/" class="info-link">www.leximantilla.github.io</a>
     </div>
 
     <!-- Location -->
@@ -147,7 +152,7 @@
 
     <!-- vCard QR Code -->
     <div class="qr-section">
-      <img src="https://quickchart.io/qr?text=MECARD%3AN%3AAlexxis+Jane+Mantilla%3BORG%3ADiversifiedsource+Inc.%3BTEL%3A%2B63+964+756+8540%3BEMAIL%3Alexi.mantillaa%40gmail.com%3BADR%3AMakati%2C+Philippines%3BURL%3Ahttps%3A%2F%2Fleximantilla.github.io%2Fdigitalcard%2F%3B%3B&size=150" alt="Scan to Save Contact">
+      <img src="https://quickchart.io/qr?text=MECARD%3AN%3ALexi+Mantilla%3BORG%3ADiversifiedsource+Inc.%3BTEL%3A%2B63+964+756+8540%3BEMAIL%3Alexi.mantillaa%40gmail.com%3BADR%3AMakati%2C+Philippines%3B%3B&size=150" alt="Scan to Save Contact">
     </div>
 
   </div>
